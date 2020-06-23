@@ -1,2 +1,2 @@
 # Html-CSS
-A repository regrouping little exercise in Html and CSS
+A repository regrouping little exercises in Html and CSS
