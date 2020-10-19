@@ -1,0 +1,56 @@
+#carre {
+    width: 200px;
+    height: 200px;
+    background: purple;
+}
+
+/* Les transformations */
+/* On va déplacer notre carré de 50px vers la droite */
+
+
+
+#carre {
+    transform: translateX(50px);
+}
+
+/* On tourne notre carré de 52° au survol de la souris et on l'agrandit *2*/
+
+#carre:hover {
+    transform: rotateZ(52deg) scale(2);
+}
+
+/* Les transitions */
+/* Le texte tourne de 90° en 10 secondes */
+
+
+#tourne {
+    transition: 5s;
+}
+
+#tourne:hover {
+    transform: rotateZ(90deg);
+    transition: 10s;
+}
+
+/* Les animations */
+/* Le fond du texte passe du rouge au vert puis au bleu et reprend toutes les 10s */
+
+@keyframes couleur-fond {
+    0% {
+        background: red;
+    }
+    33% {
+        background: green;
+        transform: rotateZ(90deg);
+    }
+    66% {
+        background: blue;
+    } 
+    100% {
+        background: red;
+    }
+}
+
+#couleur {
+    animation: couleur-fond 3s infinite;
+}

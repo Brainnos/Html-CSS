@@ -1,0 +1,21 @@
+.navbar-nav .active, .navbar-light .navbar-nav .nav-link:hover {
+    background: #0099ff;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0099ff;
+}
+
+/* On sélectionne la balaise header qui suit directement la balise nav */
+
+nav + header {
+    background: #f3f3f3;
+}
+
+.img-thumbnail {
+    box-shadow: 2px 2px 2px 2px #999;
+}

@@ -1,0 +1,58 @@
+/* On va mettre le premier li en gras */
+
+ul li:first-child { /* le li qui est premier enfant de ul */
+    font-weight: bold;
+}
+
+/* On met le dernier li en bleu */
+
+ul li:last-child {
+    color: blue;
+}
+
+/* On met le 3ème li en rouge */
+ul li:nth-child(3) {
+    color: red;
+}
+
+/* Colorer les liens en fonction du contenu de l'attribut href */
+
+a[href*=facebook] {
+    color: #3b5998;
+}
+
+a[href*=twitter] {
+    color: #00acee;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Dégradé sous le lien */
+
+a[href*=twitter]::after {
+    content:'';
+    position: absolute;
+    left:0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: -webkit-linear-gradient(left,#00acee, white);
+    background: -moz-linear-gradient(left,#00acee, white);
+    background: -o-linear-gradient(left,#00acee, white);
+    background: linear-gradient(to right, #00acee, white); /* !!!! DOIT ETRE LA DERNIERE !!!! */
+}
+
+
+/* On injecte les mots "liens vers" dans les liens de notre page */
+
+a::before {
+    content: "Liens vers";
+}
+
+/* Ajouter ⧉ après les liens dont le target est à "_blank" */
+
+a[target=_blank]::after {
+    content: "\29c9";
+    font-size: 0.6em;
+    vertical-align: super;
+}

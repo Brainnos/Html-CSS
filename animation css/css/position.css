@@ -1,0 +1,62 @@
+#carre1 {
+    height: 200px;
+    width: 200px;
+    background: red;
+}
+
+#carre2 {
+    height: 300px;
+    width: 300px;
+    background: green;
+}
+
+#carre3 {
+    height: 400px;
+    width: 400px;
+    background: blue;
+}
+
+/* On va positionner le carré 1 à 100 px de sa position "naturelle" horizontalement et verticalement */
+
+#carre1 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+/* Déplacer le carré 2 à 200px de la droite de la page et à 100px du bas de la page */
+
+#carre2 {
+    position: absolute;
+    right: 200px;
+    bottom: 100px;
+}
+
+/* Déplacer le carré 3 en bas à gauche de l'écran et y rester même si on défile */
+
+#carre3 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/* Carré 4 jaune et carré 5 rose, le carré 5 doit être parfaitement centrer dans le 4, le tout dans le coin en haut à droite de la page */
+
+#carre4 {
+    background: gold;
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#carre5 {
+    background: hotpink;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
